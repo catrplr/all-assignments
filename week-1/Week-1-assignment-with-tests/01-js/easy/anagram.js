@@ -8,7 +8,13 @@
 */
 
 function isAnagram(str1, str2) {
-
+  if (str1.split('').sort().join('')==str2.split('').sort().join('')){
+    console.log("The strings given are anagram")
 }
+else{
+    console.log("The given strings are not anagrams")
+}
+}
+
 
 module.exports = isAnagram;
